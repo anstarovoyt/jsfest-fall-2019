@@ -6,3 +6,6 @@ function say(animal: ICat | IDog) {
         animal.meow(); //ok
     }
 }
+
+say({ kind:"cat" }) //error
+say({ kind:"cat", meow() {}}) //ok
